@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tutorial de Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="justificacion.html">Justificación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instalacion.html">Instalación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="primeros_pasos.html">Primeros Pasos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="estructura.html">Estructura</a></li>
+                    <li class="nav-item"><a class="nav-link" href="funcionalidad.html">Funcionalidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ejemplos.html">Ejemplos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="integraciones.html">Integraciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="despliegue.html">Despliegue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conclusiones.html">Conclusiones</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center p-5 bg-light" role="banner">
+        <h1>Estructura de un Proyecto con Bootstrap</h1>
+        <p>Organización de archivos y sistema de rejilla en Bootstrap.</p>
+    </header>
+
+    <main class="container mt-4" role="main">
+        <section>
+            <h2>Estructura de Archivos y Carpetas</h2>
+            <p>Una estructura recomendada para proyectos con Bootstrap es la siguiente:</p>
+            <pre><code>/mi-proyecto-bootstrap/
+│── index.html       # Página principal
+│── about.html       # Otra página de ejemplo
+│── assets/
+│   ├── css/
+│   │   ├── styles.css  # Archivo de estilos personalizados
+│   ├── js/
+│   │   ├── scripts.js  # JavaScript personalizado
+│   ├── img/          # Carpeta para imágenes
+│── bootstrap/        # Si se usa la descarga manual
+│   ├── css/
+│   │   ├── bootstrap.min.css
+│   ├── js/
+│   │   ├── bootstrap.bundle.min.js</code></pre>
+        </section>
+
+        <section class="mt-5">
+            <h2>Sistema de Rejilla (Grid System)</h2>
+            <p>Bootstrap usa un sistema de rejilla basado en filas y columnas para organizar los elementos en la página.</p>
+            <p>Ejemplo de una estructura de tres columnas en Bootstrap:</p>
+            <pre><code>&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-4 bg-primary text-white p-3"&gt;Columna 1&lt;/div&gt;
+        &lt;div class="col-md-4 bg-secondary text-white p-3"&gt;Columna 2&lt;/div&gt;
+        &lt;div class="col-md-4 bg-success text-white p-3"&gt;Columna 3&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </section>
+
+        <section class="mt-5">
+            <h2>Contenedores en Bootstrap</h2>
+            <p>Bootstrap ofrece varios tipos de contenedores:</p>
+            <ul>
+                <li><code>.container</code>: Contenedor fijo con márgenes automáticos.</li>
+                <li><code>.container-fluid</code>: Contenedor que ocupa todo el ancho de la pantalla.</li>
+                <li><code>.container-lg</code>, <code>.container-md</code>: Contenedores responsivos según el tamaño de la pantalla.</li>
+            </ul>
+            <p>Ejemplo de un contenedor fluido:</p>
+            <pre><code>&lt;div class="container-fluid bg-light p-5"&gt;
+    &lt;h2&gt;Este es un contenedor fluido&lt;/h2&gt;
+    &lt;p&gt;Ocupa todo el ancho disponible en la pantalla.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 bg-dark text-light" role="contentinfo">
+        <p>&copy; 2025 Tutorial de Bootstrap - Todos los derechos reservados. Desarrollado por ginarobredo.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

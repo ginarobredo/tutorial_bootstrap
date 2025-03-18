@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integraciones con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tutorial de Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="justificacion.html">Justificación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instalacion.html">Instalación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="primeros_pasos.html">Primeros Pasos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="estructura.html">Estructura</a></li>
+                    <li class="nav-item"><a class="nav-link" href="funcionalidad.html">Funcionalidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ejemplos.html">Ejemplos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="integraciones.html">Integraciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="despliegue.html">Despliegue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conclusiones.html">Conclusiones</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center p-5 bg-light" role="banner">
+        <h1>Integraciones con Bootstrap</h1>
+        <p>Cómo usar Bootstrap junto con otros frameworks y herramientas.</p>
+    </header>
+
+    <main class="container mt-4" role="main">
+        <section>
+            <h2>Integración con React</h2>
+            <p>Para usar Bootstrap en un proyecto React, puedes instalarlo mediante npm:</p>
+            <pre><code>npm install bootstrap</code></pre>
+            <p>Luego, impórtalo en tu archivo principal de React:</p>
+            <pre><code>import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';</code></pre>
+        </section>
+
+        <section class="mt-5">
+            <h2>Integración con Angular</h2>
+            <p>En Angular, puedes instalar Bootstrap con npm y luego importarlo en el archivo <code>angular.json</code>:</p>
+            <pre><code>npm install bootstrap</code></pre>
+            <p>Agrega Bootstrap a la sección <code>styles</code> y <code>scripts</code> en <code>angular.json</code>:</p>
+            <pre><code>{
+  "styles": [
+    "node_modules/bootstrap/dist/css/bootstrap.min.css"
+  ],
+  "scripts": [
+    "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+  ]
+}</code></pre>
+        </section>
+
+        <section class="mt-5">
+            <h2>Integración con Vue.js</h2>
+            <p>Bootstrap puede usarse con Vue.js de manera similar a React. Instálalo con npm:</p>
+            <pre><code>npm install bootstrap</code></pre>
+            <p>Luego, impórtalo en tu archivo principal:</p>
+            <pre><code>import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';</code></pre>
+        </section>
+
+        <section class="mt-5">
+            <h2>Integración con Laravel</h2>
+            <p>En Laravel, puedes instalar Bootstrap con npm y configurarlo en tu proyecto:</p>
+            <pre><code>npm install bootstrap</code></pre>
+            <p>Importa Bootstrap en tu archivo <code>resources/js/app.js</code>:</p>
+            <pre><code>import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';</code></pre>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 bg-dark text-light" role="contentinfo">
+        <p>&copy; 2025 Tutorial de Bootstrap - Todos los derechos reservados. Desarrollado por ginarobredo.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

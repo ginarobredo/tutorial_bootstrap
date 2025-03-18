@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despliegue de Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tutorial de Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="justificacion.html">Justificación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instalacion.html">Instalación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="primeros_pasos.html">Primeros Pasos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="estructura.html">Estructura</a></li>
+                    <li class="nav-item"><a class="nav-link" href="funcionalidad.html">Funcionalidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ejemplos.html">Ejemplos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="integraciones.html">Integraciones</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="despliegue.html">Despliegue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conclusiones.html">Conclusiones</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center p-5 bg-light" role="banner">
+        <h1>Despliegue de un Proyecto con Bootstrap</h1>
+        <p>Cómo publicar tu proyecto en línea.</p>
+    </header>
+
+    <main class="container mt-4" role="main">
+        <section>
+            <h2>1. Despliegue en GitHub Pages</h2>
+            <p>GitHub Pages es una opción gratuita para alojar tu proyecto Bootstrap.</p>
+            <ol>
+                <li>Crea un repositorio en GitHub y sube tu código.</li>
+                <li>Ve a <strong>Settings &gt; Pages</strong>.</li>
+                <li>En la sección <strong>Source</strong>, selecciona la rama <code>main</code> y la carpeta <code>/</code>.</li>
+                <li>Guarda los cambios y tu sitio estará disponible en <code>https://tu-usuario.github.io/tu-repositorio/</code>.</li>
+            </ol>
+        </section>
+
+        <section class="mt-5">
+            <h2>2. Despliegue en Netlify</h2>
+            <p>Netlify permite desplegar sitios web con solo arrastrar y soltar.</p>
+            <ol>
+                <li>Crea una cuenta en <a href="https://www.netlify.com/" target="_blank">Netlify</a>.</li>
+                <li>Arrastra tu carpeta del proyecto a la interfaz de Netlify.</li>
+                <li>Netlify generará un enlace para acceder a tu sitio.</li>
+            </ol>
+        </section>
+
+        <section class="mt-5">
+            <h2>3. Despliegue en Vercel</h2>
+            <p>Vercel es otra opción sencilla para desplegar proyectos Bootstrap.</p>
+            <ol>
+                <li>Crea una cuenta en <a href="https://vercel.com/" target="_blank">Vercel</a>.</li>
+                <li>Conéctalo a tu repositorio de GitHub.</li>
+                <li>Selecciona el proyecto y haz clic en <strong>Deploy</strong>.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 bg-dark text-light" role="contentinfo">
+        <p>&copy; 2025 Tutorial de Bootstrap - Todos los derechos reservados. Desarrollado por ginarobredo.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
