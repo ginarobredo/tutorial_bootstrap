@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalación de Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tutorial de Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="justificacion.html">Justificación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="instalacion.html">Instalación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="primeros_pasos.html">Primeros Pasos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="estructura.html">Estructura</a></li>
+                    <li class="nav-item"><a class="nav-link" href="funcionalidad.html">Funcionalidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ejemplos.html">Ejemplos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="integraciones.html">Integraciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="despliegue.html">Despliegue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="conclusiones.html">Conclusiones</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center p-5 bg-light" role="banner">
+        <h1>Instalación de Bootstrap</h1>
+        <p>Para utilizar Bootstrap, es importante conocer los distintos métodos de instalación y configuración. En esta sección explicamos cómo instalar Bootstrap a través de un CDN, npm o descarga manual, junto con los requisitos y configuraciones necesarias.</p>
+            <p class="text-center">Selecciona una de las secciones en el menú de navegación para  aprender sobre Bootstrap.</p>
+    </header>
+    <main class="container mt-4" role="main">
+        <section class="mt-5">
+		<h4>Versiones necesarias</h4>
+            <p>La versión recomendada es **Bootstrap 5.3.0** o superior, ya que incluye mejoras en accesibilidad y compatibilidad.</p>
+            
+            <h4>Rutas para tener en cuenta</h4>
+            <p>Si descargas Bootstrap manualmente, debes asegurarte de enlazar correctamente los archivos CSS y JavaScript en la carpeta adecuada dentro de tu proyecto.</p>
+            
+            <h4>Variables de entorno</h4>
+            <p>Bootstrap no requiere la configuración de variables de entorno para su funcionamiento estándar. Sin embargo, si se usa con npm y un entorno de desarrollo como Webpack, puede ser necesario configurar rutas en el archivo de configuración.</p>
+            
+            <h4>¿Necesita base de datos?</h4>
+            <p>No, Bootstrap es un framework de diseño basado en CSS y JavaScript. No requiere una base de datos para su funcionamiento.</p>
+
+            <p>Bootstrap puede instalarse de diferentes maneras, dependiendo de las necesidades del proyecto:</p>
+
+            <h3>1. Uso del CDN (Recomendado)</h3>
+            <p>Este método permite usar Bootstrap sin necesidad de descargar archivos adicionales. Simplemente añade la siguiente línea en la sección `<head>` de tu archivo HTML:</p>
+            <pre><code>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;</code></pre>
+            <p>Para habilitar los componentes interactivos, también es necesario incluir el siguiente script antes de cerrar el `<body>`:</p>
+            <pre><code>&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;</code></pre>
+            <p>Este es el método que estamos utilizando en este tutorial.</p>
+            
+            <h3>2. Instalación con npm</h3>
+            <p>Si prefieres gestionar dependencias con npm, puedes instalar Bootstrap mediante el siguiente comando en la terminal:</p>
+            <pre><code>npm install bootstrap</code></pre>
+            <p>Después de la instalación, puedes importar Bootstrap en tu archivo JavaScript principal:</p>
+            <pre><code>import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';</code></pre>
+            <p>Este método es ideal para proyectos que usan frameworks como React, Vue o Angular.</p>
+
+            <h3>3. Descarga manual</h3>
+            <p>Si deseas tener una copia local de Bootstrap, puedes descargarlo directamente desde su sitio oficial:</p>
+            <p><a href="https://getbootstrap.com" target="_blank">Descargar Bootstrap</a></p>
+            <p>Después de descargar los archivos, debes incluir en tu proyecto los archivos CSS y JavaScript necesarios:</p>
+            <pre><code>&lt;link rel="stylesheet" href="ruta/bootstrap.min.css"&gt;
+&lt;script src="ruta/bootstrap.bundle.min.js"&gt;&lt;/script&gt;</code></pre>
+            <p>Este método brinda más control sobre los archivos, pero requiere actualizaciones manuales.</p>
+            
+            
+        </section>
+    </main>
+
+    <footer class="text-center p-3 bg-dark text-light" role="contentinfo">
+        <p>&copy; 2025 Tutorial de Bootstrap - Todos los derechos reservados. Desarrollado por ginarobredo.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
